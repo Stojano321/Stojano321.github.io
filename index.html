@@ -1,8 +1,45 @@
+#<!DOCTYPE html>
+#<html>
+#<head>
+#    <meta http-equiv="refresh" content="0; url=https://a9276461902d-4410904072327589814.ngrok-free.app">
+#</head>
+#<body>
+#</body>
+#</html>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=https://a9276461902d-4410904072327589814.ngrok-free.app">
+    <title>RasPi3B</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide scrollbars */
+        }
+
+        iframe {
+            width: 100vw; /* 100% of viewport width */
+            height: 100vh; /* 100% of viewport height */
+            border: none; /* Remove border if necessary */
+        }
+    </style>
 </head>
 <body>
+    <iframe src="https://a9276461902d-4410904072327589814.ngrok-free.app"></iframe>
+    <script>
+    // Function to update the iframe page's title
+    function updateIframeTitle(title) {
+      document.title = title;
+    }
+
+    // Wait for the iframe to load
+    document.getElementById('myIframe').onload = function() {
+      // Get the title from the iframe's content
+      var iframeTitle = this.contentDocument.title;
+
+      // Update the iframe page's title
+      updateIframeTitle(iframeTitle);
+    };
+  </script>
 </body>
 </html>
